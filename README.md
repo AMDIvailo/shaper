@@ -17,4 +17,4 @@ Shaper
 
 Shaper allows you to draw squares and rectangles with ease.<br>
 Documentation:<br>
-    ODF Text Document: [Documentation](/docs)<br>
+    ODF Text Document: [Documentation](/docs/documentation.odt)<br>
