@@ -15,7 +15,7 @@ Shaper
     You should have received a copy of the GNU General Public License
     along with Shaper.  If not, see <http://www.gnu.org/licenses/>.
 
-Why shaper?
-    Shaper allows you to draw squares and rectangles with ease.
-Documentation:
-    ODF Text Document: [Documentation](/docs)
+Why shaper?<br>
+    Shaper allows you to draw squares and rectangles with ease.<br>
+Documentation:<br>
+    ODF Text Document: [Documentation](/docs)<br>
