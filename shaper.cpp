@@ -1,3 +1,5 @@
+//Shaper  Copyright (C) 2016  AMDIvailo
+
 //This file is part of Shaper.
 
 //Shaper is free software: you can redistribute it and/or modify
@@ -155,7 +157,7 @@ public:
     width=x;
     height=y;
   }
-  void setSolid(bool solid)
+  void setSolid(bool solid = false)
   {
     isSolid=solid;
   }
