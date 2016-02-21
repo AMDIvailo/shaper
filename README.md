@@ -18,4 +18,4 @@ Shaper
 Why shaper?
     Shaper allows you to draw squares and rectangles with ease.
 Documentation:
-    ODF Text Document: [Absolute README link](/docs)
+    ODF Text Document: [Documentation](/docs)
