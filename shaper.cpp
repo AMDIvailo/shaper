@@ -187,6 +187,31 @@ public:
 	cout << "Not implemented yet!" << endl;
       }
     }
+    else if(triangletype == "isosceles-top")
+    {
+      if(isSolid == true)
+      {
+	for(int rownmb = 1; rownmb <= height; rownmb++)
+	{
+	  for(int bspace = rownmb; bspace >=1; bspace--)
+	  {
+	  cout << " ";
+	  }
+	  for(int symnmb = 0; symnmb <= width-rownmb; symnmb++)
+	  {
+	    for(int reps = 0; reps <= 1; reps++)
+	    {
+	    cout << symboltouse;
+	    }
+	  }
+	cout << endl;
+	}
+      }
+      else
+      {
+	cout << "Not implemented yet!" << endl;
+      }
+    }
   }
   void setShapeType(string shape)
   {

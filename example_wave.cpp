@@ -9,6 +9,11 @@ int main()
   {
   myshape.setTriangleType("right-bottom");
   myshape.draw();
+  myshape.setSolid(false);
+  myshape.setShapeType("square");
+  myshape.draw();
+  myshape.setSolid(true);
+  myshape.setShapeType("triangle");
   myshape.setTriangleType("right-top");
   myshape.draw();
   }
