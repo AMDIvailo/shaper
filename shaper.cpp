@@ -22,6 +22,7 @@ class shaper
 {
 private:
   string shapetype;
+  string triangletype;
   char symboltouse;
   int height;
   int width;
@@ -38,6 +39,10 @@ public:
     {
       setShapeType("rectangle");
     }
+    else if(shape == "triangle")
+    {
+      setShapeType("triangle");
+    }
     else
     {
       cout << "Error! Bad constructor parameter!" << endl;
@@ -52,6 +57,10 @@ public:
     else if(getShapeType() == "rectangle")
     {
       rectangle(isSolid, symboltouse, height, width);
+    }
+    else if(getShapeType() == "triangle")
+    {
+      triangle(isSolid, symboltouse, height, width);
     }
   }
   void square(bool isSolid, char symboltouse, int heightwidth)
@@ -140,6 +149,45 @@ public:
       }
     }
   }
+  void triangle(bool isSolid, char symboltouse, int height, int width)
+  {
+    if(triangletype == "right-top")
+    {
+      if(isSolid == true)
+      {
+	for(int rownmb = 1; rownmb <= height; rownmb++)
+	{
+	  for(int symnmb = 0; symnmb <= width-rownmb; symnmb++)
+	  {
+	  cout << symboltouse;
+	  }
+	cout << endl;
+	}
+      }
+      else
+      {
+	cout << "Not implemented yet!" << endl;
+      }
+    }
+    else if(triangletype == "right-bottom")
+    {
+      if(isSolid == true)
+      {
+	for(int rownmb = 1; rownmb <= height; rownmb++)
+	{
+	  for(int symnmb = 2; symnmb <= 1+rownmb; symnmb++)
+	  {
+	  cout << symboltouse;
+	  }
+	cout << endl;
+	}
+      }
+      else
+      {
+	cout << "Not implemented yet!" << endl;
+      }
+    }
+  }
   void setShapeType(string shape)
   {
     shapetype = shape;
@@ -160,5 +208,9 @@ public:
   void setSolid(bool solid = false)
   {
     isSolid=solid;
+  }
+  void setTriangleType(string ttype)
+  {
+    triangletype = ttype;
   }
 }; 
